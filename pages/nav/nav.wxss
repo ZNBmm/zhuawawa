@@ -1,0 +1,87 @@
+/* pages/nav/nav.wxss */
+/* pages/free/free.wxss */
+.roomList {
+
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+.roomContent {
+  width: 344rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.room {
+  height: 344rpx;
+  width: 344rpx;
+
+}
+
+.roomImage {
+  height: 344rpx;
+  width: 344rpx;
+  border-radius: 30rpx;
+
+}
+
+.roomName {
+
+  width: 95%;
+  color: #333;
+  font-size: 30rpx;
+  bottom: 20rpx;
+  left: 18rpx;
+  margin-top: 5px;
+  /* text-shadow: #000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0; */
+
+}
+
+.roomMoney {
+
+  color: #333;
+  font-size: 30rpx;
+  bottom: 100rpx;
+  left: 18rpx;
+  /* text-shadow: #000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0; */
+}
+.roomMoneyContent{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+
+}
+.moneyIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.currentOnline {
+  position: absolute;
+  right: 10px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  font-size: 28rpx;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.stateContent {
+  position: absolute;
+  right: 0;
+}
+.stateImage{
+  height: 27px;
+  width: 59px;
+  border-top-right-radius: 30rpx;
+}

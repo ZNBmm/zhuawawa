@@ -1,0 +1,15 @@
+<view>
+
+   <view class='contact'>
+
+      <view class='contactTitle'>点击下面气泡联系客服</view>
+      <contact-button 
+        type="default-dark" 
+        size="20"
+        session-from="weapp"
+        >
+      </contact-button>
+   </view>
+
+
+</view>

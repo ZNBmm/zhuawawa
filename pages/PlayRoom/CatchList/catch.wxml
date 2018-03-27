@@ -1,0 +1,25 @@
+<view class='contend'>
+
+  <view class='headContent'>
+    <view class='headImageContent' bindtap='previewUserHeadImage'>
+      <image class='headImage' src='{{mode.headimg}}'>
+      </image>
+    </view>
+    <view class='headTitle' >{{mode.name + '(' + 'ID:' +mode.user_id + ')'}}</view>
+    <view>{{'共抓中: '+ roomList[0].cnt +' 次' }}</view>
+  </view>
+
+  <view class='catchList'>
+    <block wx:for="{{roomList}}" wx:key='{{index}}'>
+        <view class='roomContent' data-mode='{{roomList[index]}}' >
+          <image src='{{roomList[index].img}}' />
+
+          <view class='room'>
+              <view class='roomName'>{{roomList[index].name}}</view>
+              <view class='roomTime'>{{timeArr[index]}}</view>
+          </view>
+      </view>
+    </block>
+  </view>
+
+</view>

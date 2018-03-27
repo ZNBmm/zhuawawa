@@ -1,0 +1,21 @@
+
+<view class='container' style='height:{{screenH}}px'>
+
+  <view class='head'>
+    <view class='headTitle'>账户余额</view>
+    <view class='headCoins'>{{userMode.coins}}币</view>
+  </view>
+
+  <view class='line'></view>
+
+  <view class='bottomConent'>
+    <block wx:for="{{dataArr}}" wx:key="{{index}}">
+      <view class='item'>
+        <view class='itemName'>{{dataArr[index].name}}</view>
+        <view class='itemPrice'>¥{{dataArr[index].price}}元</view>
+      </view>
+    </block>
+  </view>
+
+  <view class='tip'>点击即可充值,充的越多,得到的越多</view>
+</view>

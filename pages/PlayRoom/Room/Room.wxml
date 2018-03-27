@@ -1,0 +1,146 @@
+
+<view  class='content'>
+  
+
+  <view class='liveContent'>
+      <!--视频播放  -->
+      <live-player class="{{coverShow === 0?'playcontentShow':'playcontentHide'}}"  src='{{playUrl}}' mode="live" autoplay  bindstatechange="statechange" object-fit="fillCrop" style='height:{{livePlayH}}px;width:{{coverShow === 1?0:livePlayW}}px'>
+
+          <cover-view class='coverContentView' style='height:{{livePlayH}}px; width:{{livePlayW}}px' >
+          <!--加载 图  -->
+            <cover-view class="{{coverShow === 1?'coverContentShow':'coverContentHide'}}" style='height:{{livePlayH}}px; width:{{livePlayW}}px'>
+              <cover-image class='coverImg' src='{{loadingPath}}' mode='scaleToFill' style='height:{{livePlayH}}px; width:{{livePlayW}}px'>
+              </cover-image>
+            </cover-view>
+
+            <!-- 头像信息  -->
+            <cover-view  hidden="{{playUserInfo.name ? fales:true}}" class='userHeadView'>
+              <cover-view class='userImgContent'>
+                <cover-image class='userImg' src='{{playUserInfo.headimg}}'></cover-image>
+              </cover-view>
+              
+              <cover-view class='usernameContet'>
+                <cover-view class='username'>{{playUserInfo.name }}</cover-view>
+                <cover-view class='userstate'>游戏中</cover-view>
+              </cover-view>
+            </cover-view>
+
+            <!--房间人数  -->
+            <cover-view class='roomCountContent'>
+              <cover-view class='roomCount'>
+                <cover-view>10人</cover-view>
+                <cover-view>在房间</cover-view>
+              </cover-view>
+
+                <cover-view class='roomImageContent'>
+                  <cover-view class='userImgContent'>
+                    <cover-image class='userImg' src='{{mode.img}}'></cover-image>
+                  </cover-view>
+                  <cover-view class='userImgContent'>
+                    <cover-image class='userImg'src='{{mode.img}}'></cover-image>
+                  </cover-view>
+                  <cover-view class='userImgContent'>
+                    <cover-image class='userImg'src='{{mode.img}}'></cover-image>
+                  </cover-view>
+                  
+                </cover-view>
+            </cover-view>
+
+            <!--消息列表 进来了.离开了 其他人抓到了 -->
+            <cover-view class='chatlist'>
+              <block wx:for='{{chatList}}'>
+                  <cover-view animation>夏天抓到了</cover-view>
+              </block>
+            </cover-view>
+
+          </cover-view>
+
+      </live-player>
+      <!--操作面板  -->
+      <view class='playContentPan' style='height:{{screenH-livePlayH}}px'>
+          <!--上下左右操作面板  -->
+          <view class="{{playPanShow?'playPan':'playPanHide'}}" style='height:{{screenH-livePlayH}}px'>
+            <view class='playPanLeft' style='height:{{screenH-livePlayH}}px'>
+              <image class='moveLeft'  src='../../source/image/move_left.png'
+                bindtouchstart='lefttouchstart'
+                bindtouchend='lefttouchend'
+
+              />
+
+              <image class='moveTop' src='../../source/image/move_top.png'
+                bindtouchstart='toptouchstart'
+                bindtouchend='toptouchend'
+              />
+
+              <image class='moveRight' src='../../source/image/move_right.png'
+                bindtouchstart='righttouchstart'
+                bindtouchend='righttouchend'
+              />
+
+              <image class='moveDown' src='../../source/image/move_down.png'
+                bindtouchstart='downtouchstart'
+                bindtouchend='downtouchend'
+              />
+
+            </view>
+            <view class='catchDown'>
+              <image src='../../source/image/move_catch.png'
+                bindtouchstart='catchtouchstart'
+                bindtouchend='catchtouchend'
+              />
+            </view>
+          </view>
+          <!--准备游戏面板  -->
+          <view class="{{playPreparePanShow?'preparePan':'preparePanHide'}}" style='height:{{screenH-livePlayH}}px'>
+            <view class='chatView'>
+              <image src='../../source/image/sendMessage.png'>
+              </image>
+            </view>
+            <view class='gameBegin' bindtap='gameBegin'>
+              <image class='gameBeginImg' src='../../source/image/gameBegin.png'></image>
+              <text class='gameBeginText'>开始游戏</text>
+              <text class='gameCost'>本次:{{mode.price}}币</text>
+            </view>
+            <view class='playRightContet'>
+                <view bindtap='toTopUp' class='touUpView'>+ 去充值</view>
+            </view>
+            <view class='yue'>余额:{{userMode.coins}}币</view>
+          </view>
+
+
+
+      </view>
+  </view>
+  <!--底部content View  -->
+  <view class='bottomContent'>
+    
+      <view class='bottomTitle'>抓取记录</view>
+      <view class='catchBottomLine'></view>
+      <view >
+        <block wx:for="{{recordArr}}" wx:key='{{index}}'>
+          <view class='catchRecord'>
+            <view class='catchLeftContend' data-mode='{{recordArr[index]}}' bindtap='jumpToUserCatch'>
+              <image src='{{recordArr[index].headimg}}'></image>
+            </view>
+            <view class='catchMidContend'>
+              <view class='catchName'>{{recordArr[index].name}}</view>
+              <view class='catchTime'>{{recordTime[index]}}</view>
+            </view>
+          </view>
+          <view class='catchBottomLine'></view>
+        </block>
+      </view>
+
+      <view class='bottomTitle'>娃娃详情</view>
+      <view class='catchBottomLine'></view>
+      <view class='shopDetail'>
+        <image class='shopDetailImg' src='{{mode.img}}'></image>
+        <view class='shopDes'>{{mode.name}}</view>
+      </view>
+
+      <view class='bottomTitle' >排行榜</view>
+
+  </view>
+
+</view>
+

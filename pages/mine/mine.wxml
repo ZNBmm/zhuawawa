@@ -1,0 +1,34 @@
+<view>
+
+  <view class='headContent'>
+  
+    <view class='imageContent'>
+      <image class='headImage' src='{{mode.headimg}}'></image>
+    </view>
+    <view class='username'>{{mode.name}}</view>
+    <view class='userid'>ID:{{mode.userid}}</view>
+
+  </view>
+
+  <view class='bottomContent'>
+    <view class='sectionhead'></view>
+    <block wx:for="{{itemArr}}"  wx:for-index="i" wx:key="{{i}}" >
+      <view class='section'>
+          <block wx:for="{{itemArr[i]}}" wx:for-index="j" wx:key="{{j}}">
+            <view class='rowContent' data-rowdata='{{itemArr[i][j]}}' bindtap='rowDidClick'>
+              <image class='rowimage' src='{{itemArr[i][j].img}}'></image>
+              <view>{{itemArr[i][j].title}}</view>
+              <image class='rowRight' src='../source/image/rowRight.png'></image>
+            </view>
+            <view class='rowline'></view>
+          </block>
+      </view>
+      <view class='sectionLine'></view>
+    </block>
+    
+  
+  </view>
+
+
+
+</view>

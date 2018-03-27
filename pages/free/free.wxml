@@ -1,0 +1,23 @@
+<view>
+
+  <view class='roomList'>
+
+    <block wx:for="{{roomList}}" wx:key='{{index}}'>
+        <view class='roomContent' data-mode='{{roomList[index]}}' bindtap='toPlayRoom' >
+          <image class='roomImage' src='{{roomList[index].img}}' />
+          <text class='roomName'>{{roomList[index].name}}</text>
+          <view class='roomMoneyContent'>
+              <image class='moneyIcon' src='../source/image/金币.png'></image>
+              <text class='roomMoney'>{{roomList[index].price}}币</text>
+              <text class='currentOnline'>{{roomList[index].userCnt}}人</text>
+          </view>
+
+          <view class='stateContent'>
+            <image class='stateImage' src="{{roomList[index].state==0?'../source/image/state.png':'../source/image/state_del.png'}}"></image>
+          </view>
+      </view>
+    </block> 
+    
+  </view>
+
+</view>

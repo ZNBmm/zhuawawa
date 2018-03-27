@@ -1,0 +1,77 @@
+/* pages/charts/charts.wxss */
+.headContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #333;
+  font-size: 28rpx;
+  background-color: white;
+  height: 40px;
+}
+.headTitle{
+  height: 36px;
+  line-height: 36px;
+  width: 80px;
+  text-align: center;
+}
+.headLine{
+  background-color: #ee7c55;
+  height: 2px;
+  width: 80px;
+
+}
+.chartRow{
+  height: 110rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 28rpx;
+  color: #333;
+}
+.leftContent{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.usercontent{
+  height: 80rpx;
+  width: 80rpx;
+
+}
+.userImage {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 40rpx;
+  border-color: white;
+}
+.rankText{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  height: 40px;
+  line-height: 40px;
+}
+.username {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.rightContent{
+  margin-right: 70rpx;
+  color: #4C7EF7
+}
+.bottomLine{
+  background-color: rgb(240, 240, 240);
+  height: 2rpx;
+}
+.chartsContent{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}

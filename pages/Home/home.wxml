@@ -1,0 +1,48 @@
+
+<view class='container'>
+
+  <view class='bannerContent'>
+    <swiper indicator-dots='{{bannerArr.length}}' autoplay='true' interval='2000' indicator-active-color='#999999' circular='true' class='swiper'>
+      <block wx:for="{{bannerArr}}" wx:key='{{index}}'>
+        <swiper-item >
+          <image src="{{bannerArr[index].img_url}}" class="slide-image"/>
+        </swiper-item>
+       </block>
+    </swiper>
+  </view>
+
+
+  <scroll-view class='navContent' scroll-x style='width :100%'>
+    <view class='navList'>
+      <block wx:for="{{navArr}}" wx:key='{{index}}'>
+          <view class='nav' data-mode='{{navArr[index]}}' bindtap='jumptoclassfiy'>
+            <image src='{{navArr[index].class_img}}'/>
+            <view class='title'>{{navArr[index].name}}</view>
+          </view>
+      </block> 
+    </view>
+  </scroll-view>
+  
+
+  <view class='roomList'>
+
+    <block wx:for="{{macArr}}" wx:key='{{index}}'>
+        <view class='roomContent' data-mode='{{macArr[index]}}' bindtap='toPlayRoom' >
+          <image class='roomImage' src='{{macArr[index].img}}' />
+          <text class='roomName'>{{macArr[index].name}}</text>
+          <view class='roomMoneyContent'>
+              <image class='moneyIcon' src='../source/image/金币.png'></image>
+              <text class='roomMoney'>{{macArr[index].price}}币</text>
+              <text class='currentOnline'>{{macArr[index].userCnt}}人</text>
+          </view>
+
+          <view class='stateContent'>
+            <image class='stateImage' src="{{macArr[index].state==0?'../source/image/state.png':'../source/image/state_del.png'}}"></image>
+          </view>
+      
+      </view>
+    </block> 
+    
+  </view>
+    
+</view>

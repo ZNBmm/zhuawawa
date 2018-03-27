@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "我的",
+  "enablePullDownRefresh": false
+  
+}

@@ -1,0 +1,144 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  
+}
+
+.bannerContent {
+  margin-top: 18rpx;
+  width: 750rpx;
+  height: 228rpx;
+  background-color: white;
+}
+.swiper {
+  width: 750rpx;
+  height: 228rpx;
+}
+
+.slide-image {
+  margin-left: 18rpx;
+  margin-right: 18rpx;
+  width: 714rpx;
+  height: 228rpx;
+}
+.navList {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 750rpx;
+  flex-wrap: nowrap;
+  margin-right: 20rpx;
+}
+.nav {
+  width: 126rpx;
+  height: 160rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.nav image {
+  width: 92rpx;
+  height: 92rpx;
+}
+.nav .title {
+  font-size: 22rpx;
+  color: #999;
+
+
+}
+
+.roomList {
+
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.roomContent {
+  width: 344rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.room {
+
+  height: 344rpx;
+  width: 344rpx;
+
+}
+
+.roomImage {
+  height: 344rpx;
+  width: 344rpx;
+  border-radius: 30rpx;
+
+}
+
+.roomName {
+
+  width: 95%;
+  color: #333;
+  font-size: 30rpx;
+  bottom: 20rpx;
+  left: 18rpx;
+  margin-top: 5px;
+  /* text-shadow: #000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0; */
+
+}
+
+.roomMoney {
+
+  color: #333;
+  font-size: 30rpx;
+  bottom: 100rpx;
+  left: 18rpx;
+  /* text-shadow: #000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0; */
+}
+.roomMoneyContent{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+
+}
+.moneyIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.currentOnline {
+  position: absolute;
+  right: 10px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  font-size: 28rpx;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.stateContent {
+  position: absolute;
+  right: 0;
+}
+.stateImage{
+  height: 27px;
+  width: 59px;
+  border-top-right-radius: 30rpx;
+  
+}

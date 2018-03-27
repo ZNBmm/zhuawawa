@@ -1,0 +1,80 @@
+
+
+.headContent {
+  color: white;
+  background-color: #4C7EF7;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.headImageContent {
+
+  width: 108rpx;
+  height: 108rpx;
+  border-radius: 54rpx;
+  border-color: white;
+  border-width: 4 px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18rpx;
+}
+.headImage {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+.headTitle {
+  margin-top: 10rpx;
+}
+.catchList {
+  background-color: #4C7EF7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.roomContent {
+  background-color: white;
+  height: 444rpx;
+  width: 344rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20rpx;
+  border-radius: 18rpx;
+
+  font-size: 28rpx;
+  color: #999
+}
+.roomContent image {
+  margin-top: 18rpx;
+  border-radius: 10rpx;
+  height: 304rpx;
+  width: 304rpx;
+}
+.room {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 111rpx;
+  width: 344rpx;
+}
+.roomName {
+  margin-left: 20rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+.roomTime {
+  color: #999;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+
+}

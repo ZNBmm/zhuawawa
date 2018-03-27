@@ -1,0 +1,3 @@
+<!--pages/doll/doll.wxml-->
+<web-view src="www/"></web-view>
+<web-view src="https://mp.weixin.qq.com/"></web-view>

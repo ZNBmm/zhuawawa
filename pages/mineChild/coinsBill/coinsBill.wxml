@@ -1,0 +1,23 @@
+<!--pages/mineChild/coinsBill/coinsBill.wxml-->
+<view class='container' style='height:{{screenH}}px'>
+    <view class='head'>
+        <view class='headTitle'>账户余额</view>
+        <view class='headCoins'>{{userMode.coins}}币</view>
+    </view>
+
+    <view class='bottomContent'>
+        <block wx:for="{{dataArr}}" wx:key="{{index}}">
+           <view class='rowContent'>
+              <view class='rowLeft'>
+                <view class='rowTitle'>{{dataArr[index].title}}</view>
+                <view class='rowTime'>{{timeArr[index]}}</view>
+              </view>
+              <view class='rowRight'>
+                 {{dataArr[index].num}}
+              </view>
+           </view>
+           <view class='line'></view>
+        </block>
+    </view>
+
+</view>

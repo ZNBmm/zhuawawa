@@ -1,0 +1,15 @@
+/* pages/mineChild/contact/contach.wxss */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 28rpx;
+  color: #333;
+
+  height: 200rpx;
+  
+
+}

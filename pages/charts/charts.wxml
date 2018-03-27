@@ -1,0 +1,110 @@
+<!--pages/charts/charts.wxml-->
+<view>
+  <!--head  -->
+  <view>
+    <view class='headContent'>
+      <block wx:for="{{titleArr}}" wx:key="{{index}}">
+        <view>
+          <view style="{{current === index?'color:#ee7c55':'color:#666'}}" 
+          class='headTitle'>{{titleArr[index]}}</view>
+        </view>
+      </block>
+    </view>
+    <view  animation="{{animationData}}" class='headLine' style='margin-left:{{indicateLeft}}px'></view>
+  </view>
+  
+
+  <swiper style='height:{{screenH}}px;width:{{screenW}}px' 
+   bindchange="bindchange"
+   >
+    <view class='chartsContent' style='height:{{screenH}}px;width:{{screenW}}px' >
+     
+<!--总排行榜  -->
+          <swiper-item>
+            <scroll-view  class='bottomContnet' scroll-y style='height:{{screenH}}px;width:{{screenW}}px'>
+              <block wx:for="{{rankArr1}}" wx:key="{{index}}">
+                <view class='chartRow' style='width:{{screenW}}px' data-mode='{{rankArr1[index]}}' bindtap='clickCharts'>
+
+                  <view class='leftContent'>
+                    <view class='rankText'>{{index+1}}</view>
+                    <view class='usercontent'>
+                      <image class='userImage' src='{{rankArr1[index].headimg}}'></image>
+                    </view>
+                    <view class='username'>{{rankArr1[index].name}}</view> 
+                  </view>
+                <view class='rightContent'>
+                  {{rankArr1[index].cnt}}
+                </view>
+                </view>
+                <view class='bottomLine'></view>
+              </block>
+          </scroll-view>
+        </swiper-item>
+<!--月排行榜  -->
+          <swiper-item>
+            <scroll-view  class='bottomContnet' scroll-y style='height:{{screenH}}px;width:{{screenW}}px'>
+              <block wx:for="{{rankArr2}}" wx:key="{{index}}">
+                <view class='chartRow' style='width:{{screenW}}px' data-mode='{{rankArr2[index]}}' bindtap='clickCharts'>
+
+                  <view class='leftContent'>
+                    <view class='rankText'>{{index+1}}</view>
+                    <view class='usercontent'>
+                      <image class='userImage' src='{{rankArr2[index].headimg}}'></image>
+                    </view>
+                    <view class='username'>{{rankArr2[index].name}}</view> 
+                  </view>
+                <view class='rightContent'>
+                  {{rankArr2[index].cnt}}
+                </view>
+                </view>
+                <view class='bottomLine'></view>
+              </block>
+          </scroll-view>
+        </swiper-item>
+<!--周排行榜  -->
+          <swiper-item>
+            <scroll-view  class='bottomContnet' scroll-y style='height:{{screenH}}px;width:{{screenW}}px'>
+              <block wx:for="{{rankArr3}}" wx:key="{{index}}">
+                <view class='chartRow' style='width:{{screenW}}px' data-mode='{{rankArr3[index]}}' bindtap='clickCharts'>
+
+                  <view class='leftContent'>
+                    <view class='rankText'>{{index+1}}</view>
+                    <view class='usercontent'>
+                      <image class='userImage' src='{{rankArr3[index].headimg}}'></image>
+                    </view>
+                    <view class='username'>{{rankArr3[index].name}}</view> 
+                  </view>
+                <view class='rightContent'>
+                  {{rankArr3[index].cnt}}
+                </view>
+                </view>
+                <view class='bottomLine'></view>
+              </block>
+          </scroll-view>
+        </swiper-item>
+<!--富豪榜  -->
+          <swiper-item>
+            <scroll-view  class='bottomContnet' scroll-y style='height:{{screenH}}px;width:{{screenW}}px'>
+              <block wx:for="{{rankArr4}}" wx:key="{{index}}">
+                <view class='chartRow' style='width:{{screenW}}px' data-mode='{{rankArr4[index]}}' bindtap='clickCharts'>
+
+                  <view class='leftContent'>
+                    <view class='rankText'>{{index+1}}</view>
+                    <view class='usercontent'>
+                      <image class='userImage' src='{{rankArr4[index].headimg}}'></image>
+                    </view>
+                    <view class='username'>{{rankArr4[index].name}}</view> 
+                  </view>
+                <view class='rightContent'>
+                  {{rankArr4[index].cnt}}
+                </view>
+                </view>
+                <view class='bottomLine'></view>
+              </block>
+          </scroll-view>
+        </swiper-item>
+    
+    </view>
+  </swiper>
+
+</view>

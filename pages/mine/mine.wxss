@@ -1,0 +1,63 @@
+.headContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200rpx;
+  color: white;
+  font-size: 28rpx;
+  background: #4C7EF7;
+  justify-content: space-around;
+}
+.imageContent {
+  height: 104rpx;
+  width: 104rpx;
+  border-radius: 52rpx;
+  background-color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headImage{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50rpx;
+}
+
+.rowContent {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 88rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.rowimage {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+
+
+}
+
+.rowline {
+  height: 2rpx;
+  background: rgb(240, 240, 240)
+}
+.rowRight {
+  position: absolute;
+  width: 18rpx;
+  height: 29rpx;
+
+  right: 40rpx;
+}
+.sectionLine {
+  height: 40rpx;
+  background: rgb(240, 240, 240)
+}
+.sectionhead {
+  height: 20rpx;
+  background: rgb(240, 240, 240)
+}

@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/Home/home",
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/PlayRoom/Room/Room",
+    "pages/PlayRoom/CatchList/catch",
+    "pages/charts/charts",
+    "pages/free/free",
+    "pages/doll/doll",
+    "pages/nav/nav",
+    "pages/mineChild/mycoins/mycoins",
+    "pages/mineChild/coinsBill/coinsBill",
+    "pages/mineChild/contact/contach"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4C7EF7",
+    "navigationBarTitleText": "爱趣抓娃娃",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#4C7EF7",
+    "color": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/Home/home",
+        "text": "首页",
+        "iconPath": "pages/source/image/home_nor.png",
+        "selectedIconPath": "pages/source/image/home_del.png"
+      },
+      {
+        "pagePath": "pages/free/free",
+        "text": "乐抓专区",
+        "iconPath": "pages/source/image/free_nor.png",
+        "selectedIconPath": "pages/source/image/free_del.png"
+      },
+      {
+        "pagePath": "pages/doll/doll",
+        "text": "积分小铺",
+        "iconPath": "pages/source/image/doll_nor.png",
+        "selectedIconPath": "pages/source/image/doll_del.png"
+      },
+      {
+        "pagePath": "pages/charts/charts",
+        "text": "排行榜",
+        "iconPath": "pages/source/image/charts_nor.png",
+        "selectedIconPath": "pages/source/image/charts_del.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/source/image/mine_nor.png",
+        "selectedIconPath": "pages/source/image/mine_del.png"
+      }
+    ]
+  }
+}

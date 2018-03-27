@@ -1,0 +1,77 @@
+/* pages/mineChild/mycoins/mycoins.wxss */
+
+.container {
+
+  background: rgb(240, 240, 240);
+  height: 100%;
+  width: 100%;
+}
+
+.head {
+  height: 280rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headTitle {
+  color: #333;
+  font-size: 30rpx;
+}
+.headCoins{
+  margin-top: 20rpx;
+  color: #ee7c55;
+  font-size: 30rpx;
+}
+.line {
+  height: 2rpx;
+  background: rgb(220, 220, 220);
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+.bottomConent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+.itemName {
+  color: #4C7EF7;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.itemPrice {
+  color: white;
+  background: #4C7EF7;
+  height: 55rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 55rpx;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 10rpx;
+
+  width: 344rpx;
+  height: 155rpx;
+
+  margin-top: 40rpx;
+  
+
+}
+
+.tip {
+  color: #999;
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 80rpx;
+}
